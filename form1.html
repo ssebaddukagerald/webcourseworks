@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: aqua;
+        }
+
+        h1 {
+            text-align: center;
+            text-emphasis-color: blue;
+            color: blue;
+        }
+
+        section {
+            background-color: white;
+            width: 40%;
+            margin: 45px auto;
+            border-radius: 4px;
+            border: 5px solid white;
+        }
+
+        article div {
+            padding-bottom: 20px;
+            background-color: cyan;
+        }
+
+        article label {
+            margin-left: 40px;
+            color: rgb(0, 0, 22);
+        }
+
+        article input {
+            width: 85%;
+            padding-bottom: 5px;
+            margin-left: 40px;
+            box-sizing: none;
+            background: aqua;
+            border: none;
+            font-size: medium;
+            border-bottom: 1px solid white;
+        }
+
+        ::placeholder {
+            color: black;
+        }
+
+        article h1 {
+            padding-top: 5px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        article sup {
+            color: red;
+        }
+
+        article male {
+            width: 15px;
+        }
+
+        form {
+            background-color: aqua;
+        }
+
+        article .checkbox {
+            margin-left: 5px;
+            color: rgb(1, 1, 51);
+            position: absolute;
+            size: 20px;
+            text-align: center;
+            text-decoration: turquoise;
+        }
+
+        article .button {
+            position: relative;
+            text-size-adjust: 20px;
+            box-sizing: border-box;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            <form action="" method="GET">
+                <h1><u><i>REGISTRATION FORM</i></u><span style="color: red; font-size: 20px;"></span></h1>
+                <div>
+                    <label for="surname">SURNAME<span style="color: red; font-size: 20px;"></span></label>
+                    <input type="text" id="surname" name="surname" placeholder="Enter surname" pattern="[a-zA-Z]+ [0-9]+" required>
+                </div>
+
+                <div>
+                    <label for="othername">OTHER NAME<span style="color: red; font-size: 20px;"></span></label>
+                    <input type="text" id="othername" name="othername" placeholder="Enter other name" pattern="[a-zA-Z]+ [a-zA-Z]+ [0-9]+" required>
+                </div>
+
+                <div>
+                    <label for="pword">PASSWORD<span style="color: red; font-size: 20px;"></span></label>
+                    <input type="password" id="pword" name="password" placeholder="Enter password" pattern="[a-zA-Z]+ [a-zA-Z]+ [0-9]+" required>
+                    <div>
+                        <label for="mail">Email<span style="color: red; font-size: 20px;"></span></label>
+                        <input type="email" id="mail" name="email" placeholder="Enter Email" required>
+                    </div>
+
+                    <div>
+                        <label for="phno">CONTACT<span style="color: red; font-size: 20px;"></span></label>
+                        <input type="tel" id="phno" name="phno" placeholder="Enter number" pattern="[0-9]+" required>
+                    </div>
+
+                    <div>
+                        <span> 
+                            <label for="gender">GENDER<span style="color: red; font-size: 20px;"></span></label>
+                            <input type="radio" id="male" value="gender">
+                            <label for="male" class="man">MALE<span style="color: red; font-size: 20px;"></span></label>
+                        </span>
+                        <span> 
+                            <input type="radio" id="female" value="gender">
+                            <label for="female" class="woman">FEMALE<span style="color: red; font-size: 20px;"></span></label>
+                        </span>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="dob">DATE OF BIRTH</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <input type="checkbox" id="accept" required>
+                <label for="accept">I hereby accept all terms and conditions<span style="color: red; font-size: 20px;"></span></label>
+
+                <div>
+                    <button>SIGN IN</button>
+                </div>
+            </div>
+        </form>
+        <div class="pannel footer text left">
+            <small>&copy; Ssebadduka Gerald</small>
+        </div>
+    </article>
+</section>
+</body>
+</html>
